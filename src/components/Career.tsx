@@ -15,43 +15,60 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Bachelor of Computer Applications (BCA)</h4>
+                <h5>Sam Higginbottom University (SHUATS), Prayagraj</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2024 – Present</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Pursuing BCA with a focus on Cybersecurity, Artificial Intelligence,
+              Full Stack Development, and IoT. Building hands-on skills through
+              industry-grade projects and professional certifications.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Cybersecurity Job Simulations</h4>
+                <h5>Deloitte · Mastercard · Tata (via Forage)</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2025</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Completed professional cybersecurity job simulations — including
+              incident triage, phishing simulation design, threat analysis with
+              MITRE ATT&CK mapping, and Identity & Access Management strategy
+              for enterprise environments.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>AI/ML & Geospatial Faculty Workshop</h4>
+                <h5>Electronics & ICT Academy, IIT Guwahati</h5>
+              </div>
+              <h3>2025</h3>
+            </div>
+            <p>
+              Participated in a MeitY-supported faculty development workshop
+              focused on the intersection of artificial intelligence, machine
+              learning, and geographic information systems (GIS) for resilient
+              and sustainable resource management.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Open Source & Personal Projects</h4>
+                <h5>Self-Directed Learning & GitHub</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Building AI-powered SOC dashboards, IoT telemetry systems, security
+              auditing tools, and interactive web experiences. Actively
+              contributing to open-source and pursuing advanced certifications
+              in cybersecurity and generative AI.
             </p>
           </div>
         </div>

@@ -1,0 +1,63 @@
+.tech-stack-3d-section {
+  width: 100%;
+  padding: 100px 0;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.canvas-container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.tech-info-overlay {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  pointer-events: none;
+  z-index: 20;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 80%;
+  max-width: 600px;
+}
+
+.tech-info-overlay.visible {
+  opacity: 1;
+}
+
+.tech-info-overlay h2 {
+  font-size: 60px;
+  margin: 0 0 10px 0;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  font-family: var(--font-title);
+}
+
+.tech-info-overlay p {
+  font-size: 20px;
+  color: var(--textSecondary, #a0a0b0);
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .canvas-container {
+    height: 400px;
+  }
+  .tech-info-overlay h2 {
+    font-size: 40px;
+  }
+  .tech-info-overlay p {
+    font-size: 16px;
+  }
+}

@@ -1,6 +1,7 @@
 import { lazy, PropsWithChildren, Suspense, useEffect, useState } from "react";
 import About from "./About";
 import Career from "./Career";
+import Certifications from "./Certifications";
 import Contact from "./Contact";
 import Cursor from "./Cursor";
 import Landing from "./Landing";
@@ -10,7 +11,7 @@ import WhatIDo from "./WhatIDo";
 import Work from "./Work";
 import setSplitText from "./utils/splitText";
 
-const TechStack = lazy(() => import("./TechStack"));
+const TechStack3D = lazy(() => import("./TechStack3D"));
 
 const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
@@ -43,9 +44,10 @@ const MainContainer = ({ children }: PropsWithChildren) => {
             <WhatIDo />
             <Career />
             <Work />
+            <Certifications />
             {isDesktopView && (
-              <Suspense fallback={<div>Loading....</div>}>
-                <TechStack />
+              <Suspense fallback={<div>Loading 3D Engine....</div>}>
+                <TechStack3D />
               </Suspense>
             )}
             <Contact />

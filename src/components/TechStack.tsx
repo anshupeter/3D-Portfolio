@@ -26,8 +26,8 @@ const textures = imageUrls.map((url) => textureLoader.load(url));
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 
-const spheres = [...Array(30)].map(() => ({
-  scale: [0.7, 1, 0.8, 1, 1][Math.floor(Math.random() * 5)],
+const spheres = imageUrls.map(() => ({
+  scale: [1, 1.2, 1.1][Math.floor(Math.random() * 3)],
 }));
 
 type SphereProps = {
@@ -129,12 +129,16 @@ const TechStack = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const threshold = document
-        .getElementById("work")!
-        .getBoundingClientRect().top;
-      setIsActive(scrollY > threshold);
+      const element = document.getElementById("techstack");
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        // Activate when the techstack section enters the viewport
+        setIsActive(rect.top < window.innerHeight + 200);
+      }
     };
+    // initial check in case we reload while scrolled down
+    handleScroll();
+    
     document.querySelectorAll(".header a").forEach((elem) => {
       const element = elem as HTMLAnchorElement;
       element.addEventListener("click", () => {
@@ -167,7 +171,7 @@ const TechStack = () => {
   }, []);
 
   return (
-    <div className="techstack">
+    <div className="techstack" id="techstack">
       <h2> My Techstack</h2>
 
       <Canvas
@@ -193,7 +197,7 @@ const TechStack = () => {
             <SphereGeo
               key={i}
               {...props}
-              material={materials[Math.floor(Math.random() * materials.length)]}
+              material={materials[i]}
               isActive={isActive}
             />
           ))}
@@ -207,6 +211,25 @@ const TechStack = () => {
           <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
         </EffectComposer>
       </Canvas>
+
+      <div className="skills-container">
+        <div className="skill-category">
+          <h3>Cybersecurity & Networking</h3>
+          <p>Phishing Detection, Security Awareness, IAM Basics, Authentication, Access Control, TCP/IP, DNS</p>
+        </div>
+        <div className="skill-category">
+          <h3>Systems & Tools</h3>
+          <p>Windows, Linux, Git, GitHub, VS Code, Command Line, Wireshark, Nmap, Kali Linux</p>
+        </div>
+        <div className="skill-category">
+          <h3>Programming</h3>
+          <p>Java (OOP), Python, C++, HTML, CSS, JavaScript, TypeScript, React, Node.js</p>
+        </div>
+        <div className="skill-category">
+          <h3>IoT</h3>
+          <p>Arduino, NodeMCU</p>
+        </div>
+      </div>
     </div>
   );
 };
