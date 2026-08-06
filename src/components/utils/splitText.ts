@@ -15,6 +15,7 @@ export default function setSplitText() {
   const paras: NodeListOf<ParaElement> = document.querySelectorAll(".para");
   const titles: NodeListOf<ParaElement> = document.querySelectorAll(".title");
 
+  const TriggerStart = window.innerWidth <= 1024 ? "top 80%" : "top 70%";
   const ToggleAction = "play pause resume reverse";
 
   paras.forEach((para: ParaElement) => {
@@ -24,7 +25,7 @@ export default function setSplitText() {
       para.split?.revert();
     }
 
-      para.split = new SplitText(para, {
+    para.split = new SplitText(para, {
       type: "lines,words",
       linesClass: "split-line",
     });
@@ -37,7 +38,7 @@ export default function setSplitText() {
         scrollTrigger: {
           trigger: para,
           toggleActions: ToggleAction,
-          start: window.innerWidth <= 1024 ? "top 80%" : "top 70%",
+          start: TriggerStart,
         },
         duration: 1,
         ease: "power3.out",
@@ -63,7 +64,7 @@ export default function setSplitText() {
         scrollTrigger: {
           trigger: title,
           toggleActions: ToggleAction,
-          start: window.innerWidth <= 1024 ? "top 80%" : "top 70%",
+          start: TriggerStart,
         },
         duration: 0.8,
         ease: "power2.inOut",
