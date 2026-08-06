@@ -3,9 +3,8 @@ import { createPortal } from "react-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaSearch, FaTimes, FaExternalLinkAlt, FaAward, FaEye } from "react-icons/fa";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 import "./styles/Certifications.css";
 
 interface Certification {

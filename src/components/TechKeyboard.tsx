@@ -52,7 +52,7 @@ const KeyboardKey: React.FC<KeyProps> = ({ tech, position, onHover }) => {
   const [hovered, setHover] = useState(false);
   const targetY = hovered ? position[1] - 0.2 : position[1];
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     if (meshRef.current) {
       meshRef.current.position.y = THREE.MathUtils.lerp(meshRef.current.position.y, targetY, delta * 15);
     }
