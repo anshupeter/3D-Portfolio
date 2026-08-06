@@ -142,7 +142,7 @@ const Contact = () => {
 
           {/* Form Side */}
           <div className="contact-form-panel" ref={formRef}>
-            <form action="https://formspree.io/f/mlgewgao" method="POST" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+            <form action="https://formspree.io/f/mgawvyan" method="POST" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
               <div className="form-group" style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
                 <input
                   type="text"
