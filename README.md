@@ -19,11 +19,20 @@ If you use parts of the code, you must provide proper credit linking back to the
 
 Build your own version — don’t just copy.
 
-— Moncy Yohannan
+— Anshu Peter
 
 ---
 
 ## 🛠️ Instructions
+
+### How to use this code
+Because this is a personal portfolio, you cannot push directly to this repository after cloning. If you want to use this as a reference or make your own version (following the license rules above), you must **Fork** the repository first.
+
+1. Click the "Fork" button at the top right of the repository
+2. Clone your forked repository: `git clone https://github.com/your-username/anshu-portfolio.git`
+3. Make your changes and push to your fork
+
+---
 
 I have modified the GSAP Club plugins using trial versions.  
 ⚠️ Note: Trial plugins cannot be used for production or hosting.
@@ -50,10 +59,6 @@ However:
 - It is not open source and not available for reuse
 
 Any usage, extraction, or redistribution of that avatar from my live website is strictly prohibited.
-
----
-
-![Protfolio-Preview](https://github.com/user-attachments/assets/3c4557e7-6392-4928-b8a9-7b2476ef4edd)
 
 ---
 
