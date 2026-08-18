@@ -142,17 +142,22 @@ export function setAllTimeline() {
       start: "top 30%",
       end: "100% center",
       scrub: true,
-      invalidateOnRefresh: true,
+      invalidateOnRefresh: false,
     },
   });
   careerTimeline
     .fromTo(
       ".career-timeline",
-      { maxHeight: "10%" },
-      { maxHeight: "100%", duration: 0.5 },
+      { scaleY: 0 },
+      { scaleY: 1, duration: 0.5 },
       0
     )
-
+    .fromTo(
+      ".career-dot",
+      { top: "0%" },
+      { top: "100%", duration: 0.5 },
+      0
+    )
     .fromTo(
       ".career-timeline",
       { opacity: 0 },
@@ -175,20 +180,4 @@ export function setAllTimeline() {
       },
       0
     );
-
-  if (window.innerWidth > 1024) {
-    careerTimeline.fromTo(
-      ".career-section",
-      { y: 0 },
-      { y: "20%", duration: 0.5, delay: 0.2 },
-      0
-    );
-  } else {
-    careerTimeline.fromTo(
-      ".career-section",
-      { y: 0 },
-      { y: 0, duration: 0.5, delay: 0.2 },
-      0
-    );
-  }
 }

@@ -28,7 +28,6 @@ const projects: Project[] = [
     tech: ["React", "Express", "Node", "SQLite", "Tailwind CSS", "WebSockets"],
     image: "/images/cyber_log_analyzer.png",
     github: "https://github.com/anshupeter/AI-CyberLog-Analyzer-Live-Monitering--",
-    demo: "https://anshupeter.pages.dev"
   },
   {
     id: "iotwheat",
@@ -59,7 +58,7 @@ const projects: Project[] = [
     tech: ["React", "Vite", "Three.js", "GSAP", "Framer Motion", "HSL CSS"],
     image: "/images/Portfolio.png",
     github: "https://github.com/anshupeter/Portfolio-Site",
-    demo: "https://anshupeter.pages.dev"
+    demo: "https://anshupeter.tech"
   },
   {
     id: "studentrecord",
